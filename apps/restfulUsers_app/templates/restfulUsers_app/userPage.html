@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class = wrapper>
+		<h1>User {{ user.id }}</h1>
+		<p>Full Name: {{ user.first_name }} {{ user.last_name }}</p>
+		<p>Email: {{ user.email }}</p>
+		<p>Created At: {{ user.created_at }}</p>
+		<p><a href="/users/">Go Back</a> | <a href="/users/{{ user.id }}/edit">Edit</a> | <a href="/users/{{ user.id }}/destroy">Delete</a></p>
+
+	</div>
+</body>
+</html>
